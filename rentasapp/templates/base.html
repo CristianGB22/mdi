@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
+  {% load static %}
   <body>
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary"
@@ -20,7 +21,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="/"
           ><img
-            src="/media/mdi1.png"
+            src="{% static 'images/mdi1.png' %}"
             class="img-responsive rounded float-right"
             alt="bootstrap"
             width="65" height="65"
@@ -98,7 +99,7 @@
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
           <div class="col mb-3">
             <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-              <img src="/media/mdi.jpg" alt="" width="180" height="180">            </a>
+              <img src="{% static 'images/mdi.jpg' %}" alt="" width="180" height="180">            </a>
           </div>      
           <div class="col mb-3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.1406680404339!2d-77.53187794594594!3d-9.516944378297689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a90d6c5dcddd25%3A0x3f44071a03c1a76d!2sMunicipalidad%20Distrital%20de%20Independencia%20-%20Huaraz!5e0!3m2!1ses!2spe!4v1685639962920!5m2!1ses!2spe" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -111,12 +112,12 @@
             <h5>Institucional</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="https://www.gob.pe/muniindependencia-huaraz?fbclid=IwAR2qN0S2rQSTOak_1vVAo9UyaqRZrDaDTnvy2syPsZmeK9t5JEfjnlF7t1Y" class="nav-link p-0 text-muted">
-                <img src="/media/www.png" alt="" width="15" height="15"> munidi.gob.pe</a>
+                <img src="{% static 'images/www.png' %}" alt="" width="15" height="15"> munidi.gob.pe</a>
               </li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
-                <img src="/media/telefono.png" alt="" width="15" height="15"> (01) 6419768</a></li>
+                <img src="{% static 'images/telefono.png' %}" alt="" width="15" height="15"> (01) 6419768</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
-                <img src="/media/mail.png" alt="" width="20" height="20"> Informes@munidi.gob.pe</a></li>
+                <img src="{% static 'images/mail.png' %}" alt="" width="20" height="20"> Informes@munidi.gob.pe</a></li>
             </ul>
           </div>
       

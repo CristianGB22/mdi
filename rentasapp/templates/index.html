@@ -1,6 +1,7 @@
 {% extends 'base.html' %} 
 
 {% block content %}
+{% load static %}
 <div style="text-align: center; background-color: #3576ad;">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 480px;">
     <div class="carousel-inner">
@@ -32,7 +33,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#" style="text-align: center;">
-      <img src="/media/money-cheque-editar.svg" alt="" width="35" height="35">
+      <img src="{% static 'images/money-cheque-editar.svg'%}" alt="" width="35" height="35">
       <div class="name text-muted text-decoration-none text-center pt-1">Ver deuda</div>
     </a>
     <a class="navbar-brand" href="#" style="text-align: center;">
