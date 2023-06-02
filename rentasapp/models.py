@@ -1,10 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import User
+import os
 
 # Create your models here.
 class Anuncio(models.Model):
     name = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='anuncios')
+    image = models.ImageField(upload_to='images/anuncios')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(null=True, blank=True)
     deleted = models.DateTimeField(null=True, blank=True)
