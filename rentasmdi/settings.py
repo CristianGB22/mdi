@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'FALSE'
+DEBUG = True
 #'RENDER' not in os.environ
 
 
@@ -144,7 +144,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if not DEBUG:
    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-   STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+   STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+   #'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #STATICFILES_DIRS = [
 #    os.path.join(BASE_DIR; 'assets')
 #]
